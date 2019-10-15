@@ -18,7 +18,7 @@ void facil();
  * */ 
 void medio();
 
-/* NÍVEL DÍFICIL (100 PERGUNTAS)
+/* NÍVEL DÍFICIL
  *
  * */
 void dificil();
