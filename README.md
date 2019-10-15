@@ -5,6 +5,8 @@ Desenvovido por Gustavo Bacagine <gustavobacagine@gmail.com>-->
 # Quiz For Developers
 <b>Desenvolvido por:</b> Gustavo Bacagine <gustavobacagine@gmail.com>
 
+![git-hub large](QuizForDevelopers.png)
+
 Quiz For Developers é um jogo de código aberto programado em C feito para rodar no terminal.
 
 Este jogo foi feito como uma forma de aprendizagem da línguagem C, portanto pode ser que ajam alguns erros no código fonte do jogo que serão corrigidos futuramente.
