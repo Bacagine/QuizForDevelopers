@@ -3,7 +3,7 @@ Versão: 13.09.19
 Desenvovido por Gustavo Bacagine <gustavobacagine@gmail.com>-->
 
 # Quiz For Developers
-<b>Desenvolvido por:</b> Gustavo Bacagine <gustavobacagine@gmail.com>
+<b>Desenvolvido por:</b> Gustavo Bacagine <gustavobacagine@protonmail.com>
 
 ![git-hub large](QuizForDevelopers.png)
 
