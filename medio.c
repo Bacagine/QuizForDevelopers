@@ -1,20 +1,21 @@
 /*******************************************************************************
+ * Copyright (C) 2019 Gustavo Bacagine                                         *
  * Git Hub: https://github.com/Bacagine/QuizForDevelopers                      *
  *                                                                             *
  * Descrição                                                                   *
  *                                                                             *
- * main.c: arquivo principal da aplicação QuizForDevelopers contendo o menu    *
- * do jogo                                                                     *
+ * medio.c: arquivo contendo a função do nível médio do jogo                   *
  *                                                                             *
  * Versão: 0.1                                                                 *
  *                                                                             *
- * Desenvolvido por: Gustavo S. Bacagine	<gustavobacagine@gmail.com>        *
+ * Desenvolvido por: Gustavo Bacagine <gustavobacagine@protonmail.com>         *
  * Data: 15/08/2019                                                            *
  *******************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h> // --> Biblioteca usada para o system("clear")
 #include <string.h>
+#include "clear_buffer.h"
 #include "niveis.h" // --> Biblioteca contendo o protótipo \
 					       das funções com os niveis do jogo
 
@@ -26,12 +27,13 @@ void medio(){
     printf("11) Quem fundou a Apple?\n");
     scanf(" %10[^\n]", quest11);
     while(strcasecmp(quest11, quest11)){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf(" %10[^\n]", quest11);
     }
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest12;
@@ -44,12 +46,13 @@ void medio(){
     printf("d)Assembler\n");
     scanf("%c", &quest12);
     while(quest12 != resp12){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf("%c", &quest12);
     }
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest13;
@@ -62,12 +65,13 @@ void medio(){
     printf("d)Uma línguagem de baixo nível\n");
     scanf("%c", &quest13);
     while(quest13 != resp13){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf("%c", &quest13);
     }
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest14[6];

@@ -1,7 +1,7 @@
 /* niveis.h
- * Biblioteca criada por Gustavo Bacagine
- * contendo o prototipo dos níveis do jogo
- * Quiz For Developers
+ * 
+ * Biblioteca criada por Gustavo Bacagine <gustavobacagine@protonmail.com>
+ * contendo o prototipo dos níveis do jogo Quiz For Developers
  * 
  * Data: 11/10/2019 */
 
@@ -11,18 +11,18 @@
 /* NÍVEL FÁCIL
  *
  * */ 
-void facil();
+void facil(void);
 
 /* NÍVEL MÉDIO
  *
  * */ 
-void medio();
+void medio(void);
 
 /* NÍVEL DÍFICIL
  *
  * */
-void dificil();
+void dificil(void);
 
-void criador();
+void criador(void);
 
 #endif

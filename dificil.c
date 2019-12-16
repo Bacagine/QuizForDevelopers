@@ -1,20 +1,21 @@
 /*******************************************************************************
+ * Copyright (C) 2019 Gustavo Bacagine                                         *
  * Git Hub: https://github.com/Bacagine/QuizForDevelopers                      *
  *                                                                             *
  * Descrição                                                                   *
  *                                                                             *
- * main.c: arquivo principal da aplicação QuizForDevelopers contendo o menu    *
- * do jogo                                                                     *
+ * dificil.c: arquivo a função da fase díficil do jogo                         *
  *                                                                             *
  * Versão: 0.1                                                                 *
  *                                                                             *
- * Desenvolvido por: Gustavo S. Bacagine	<gustavobacagine@gmail.com>        *
+ * Desenvolvido por: Gustavo Bacagine <gustavobacagine@protonmail.com>         *
  * Data: 15/08/2019                                                            *
  *******************************************************************************/
  
 #include <stdio.h>
 #include <stdlib.h> // --> Biblioteca usada para o system("clear")
 #include <string.h>
+#include "clear_buffer.h"
 #include "niveis.h" // --> Biblioteca contendo o protótipo \
 					       das funções com os niveis do jogo
 
@@ -26,12 +27,13 @@ void dificil(){ //
     printf("51) Quem foi a primeira pessoa a criar a programação?\n");
     scanf(" %12[^\n]", quest51);
     while(strcasecmp(quest51, resp51)){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf(" %12[^\n]", quest51);
       }
       puts("Correto!");
-      getchar();
+      clear_buffer();
       getchar();
 
     char quest52[17];
@@ -40,12 +42,14 @@ void dificil(){ //
     printf("52) Quem é o criador da linguagem Python?\n");
     scanf(" %16[^\n]", quest52);
     while(strcasecmp(quest52, resp52)){
-          puts("Não, está errado!");
-          puts("Por favor tente novamente:");
-          scanf(" %16[^\n]", quest52);
+        clear_buffer();
+        puts("Não, está errado!");
+        puts("Por favor tente novamente:");
+        scanf(" %16[^\n]", quest52);
+          
     }
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     // char quest53[1];
@@ -61,12 +65,13 @@ void dificil(){ //
     // printf("}\n");
     // scanf(" %[^\n]", quest53);
     // while(strcasecmp(quest53, resp53)){
+    //     clear_buffer();
     //     puts("Não, está errado!");
     //     puts("Por favor tente novamente:");
     //     scanf(" %[^\n]", quest53);
     // }
     // puts("Correto!");
-    // getchar();
+    // clear_buffer();
     // getchar();
 
     char quest54[7];
@@ -75,12 +80,13 @@ void dificil(){ //
     printf("54) Qual a distribuição LINUX mais díficil?\n");
     scanf(" %6[^\n]", quest54);
     while(strcasecmp(quest54, resp54)){
-      puts("Não, está errado!");
-      puts("Por favor tente novamente:");
-      scanf(" %6[^\n]", quest54);
+        clear_buffer();
+        puts("Não, está errado!");
+        puts("Por favor tente novamente:");
+        scanf(" %6[^\n]", quest54);
     }
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest55[18];
@@ -89,12 +95,13 @@ void dificil(){ //
     printf("55) O que significa a sigla LINUX?\n");
     scanf(" %17[^\n]", quest55);
     while(strcasecmp(quest55, quest55)){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf(" %17[^\n]", quest55);
     }
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest56[16];
@@ -103,12 +110,13 @@ void dificil(){ //
     printf("56) O que significa a sigla GNU?\n");
     scanf(" %15[^\n]", quest56);
     while(strcasecmp(quest56, resp56)){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf(" %15[^\n]", quest56);
     }
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest57[14];
@@ -117,12 +125,13 @@ void dificil(){ //
     printf("57) O que siginifica a sigla TUX?\n");
     scanf(" %13[^\n]", quest57);
     while(strcasecmp(quest57, resp57)){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf(" %13[^\n]", quest57);
     }
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
   // char quest58[];
@@ -131,12 +140,13 @@ void dificil(){ //
   // printf("58) ?\n");
   // scanf(" %[^\n]", quest58);
   // while(strcasecmp(quest58, resp58)){
+  //     clear_buffer();
   //     puts("Não, está errado!");
   //     puts("Por favor tente novamente:");
   //     scanf(" %[^\n]", quest58);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
   //
   // char quest59[];
@@ -145,12 +155,13 @@ void dificil(){ //
   // printf("59) ?\n");
   // scanf(" %[^\n]", quest59);
   // while(strcasecmp(quest59, resp59)){
+  //     clear_buffer();
   //     puts("Não, está errado!");
   //     puts("Por favor tente novamente:");
   //     scanf(" %[^\n]", quest59);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
   //
   // char quest60[];
@@ -159,12 +170,13 @@ void dificil(){ //
   // printf("60) ?\n");
   // scanf(" %[^\n]", quest60);
   // while(strcasecmp(quest60, resp60)){
+  //     clear_buffer();
   //     puts("Não, está errado!");
   //     puts("Por favor tente novamente:");
   //     scanf(" %[^\n]", quest60);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
   //
   // char quest61[];
@@ -173,12 +185,13 @@ void dificil(){ //
   // printf("61) ?\n");
   // scanf(" %[^\n]", quest61);
   // while(strcasecmp(quest61, resp61)){
+  //     clear_buffer();
   //     puts("Não, está errado!");
   //     puts("Por favor tente novamente:");
   //     scanf(" %[^\n]", quest61);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
   //
   // char quest62[];
@@ -187,12 +200,13 @@ void dificil(){ //
   // printf("62) ?\n");
   // scanf(" %[^\n]", quest62);
   // while(strcasecmp(quest62, resp62)){
+  //     clear_buffer();
   //     puts("Não, está errado!");
   //     puts("Por favor tente novamente:");
   //     scanf(" %[^\n]", quest62);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest63;
@@ -206,12 +220,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest63);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -225,12 +240,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -244,12 +260,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -263,12 +280,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -282,12 +300,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -301,12 +320,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -320,12 +340,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -339,12 +360,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -358,12 +380,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -377,12 +400,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -396,12 +420,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -415,12 +440,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -434,12 +460,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -453,12 +480,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -472,12 +500,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -491,12 +520,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -510,12 +540,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -529,12 +560,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -548,12 +580,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -567,12 +600,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -586,12 +620,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -605,12 +640,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -624,12 +660,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -643,12 +680,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -662,12 +700,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest;
@@ -681,12 +720,13 @@ void dificil(){ //
   // printf("\n");
   // scanf(" %[^\n]", quest);
   // while(strcasecmp(quest, resp)){
+  //   clear_buffer();
   //   puts("Não, está errado!");
   //   puts("Por favor tente novamente:");
   //   scanf(" %10[^\n]", quest);
   // }
   // puts("Correto!");
-  // getchar();
+  // clear_buffer();
   // getchar();
 
   // char quest100[17];
@@ -695,13 +735,14 @@ void dificil(){ //
   // printf("100) Qual é o nome do criador do jogo?\n");
   // scanf(" %16[^\n]", quest100);
   // while(strcasecmp(quest100, resp100)){
-    //     puts("Não, está errado!");
-    //     puts("Por favor tente novamente:");
-    //     scanf(" %16[^\n]", quest100);
-    // }
-    // puts("Correto!");
-    // getchar();
-    // getchar();
+  //       clear_buffer();
+  //     puts("Não, está errado!");
+  //     puts("Por favor tente novamente:");
+  //     scanf(" %16[^\n]", quest100);
+  // }
+  // puts("Correto!");
+  // clear_buffer();
+  // getchar();
 
     system("clear");
     printf("\t\t\t\t                                          ..                            \n");
@@ -738,6 +779,7 @@ void dificil(){ //
     printf("\t\t\t\t     ';:loddxxxkkOOOOOOkxl;                 ,ldxkkxxdoc;.           \n");
     printf("\t\t\t\t          ...',:clodxxdoc;.                 .,:clllc:,.             \n");
     printf("\t\t\t\t                  ..',,'.                     ......   \n");
+    
+    clear_buffer();
     getchar();
-    // getchar();
 }

@@ -1,20 +1,21 @@
 /*******************************************************************************
+ * Copyright (C) 2019 Gustavo Bacagine                                         *
  * Git Hub: https://github.com/Bacagine/QuizForDevelopers                      *
  *                                                                             *
  * Descrição                                                                   *
  *                                                                             *
- * main.c: arquivo principal da aplicação QuizForDevelopers contendo o menu    *
- * do jogo                                                                     *
+ * facil.c: arquivo contendo a função do nível fácil do jogo                   *
  *                                                                             *
  * Versão: 0.1                                                                 *
  *                                                                             *
- * Desenvolvido por: Gustavo S. Bacagine	<gustavobacagine@gmail.com>        *
+ * Desenvolvido por: Gustavo Bacagine <gustavobacagine@protonmail.com>         *
  * Data: 15/08/2019                                                            *
  *******************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h> // --> Biblioteca usada para o system("clear")
 #include <string.h>
+#include "clear_buffer.h"
 #include "niveis.h" // --> Biblioteca contendo o protótipo \
 					       das funções com os niveis do jogo
 
@@ -30,15 +31,16 @@ void facil(){
     printf("c) Línguagem B\n");
     printf("d) C++\n");
     printf("\n");
-    getchar();
-    scanf("%c", &quest1);
+    scanf(" %c", &quest1);
     while(quest1 != resp1){
-      puts("Não, está errado!");
-      puts("Por favor tente novamente:");
-      scanf("%c", &quest1);
+        clear_buffer();
+        puts("Não, está errado!");
+        puts("Por favor tente novamente:");
+        scanf(" %c", &quest1);
     }
+    system("clear");
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest2;
@@ -52,12 +54,14 @@ void facil(){
     printf("\n");
     scanf("%c", &quest2);
     while((quest2 != resp2)){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf("%c", &quest2);
     }
+    system("clear");
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest3;
@@ -71,12 +75,14 @@ void facil(){
     printf("\n");
     scanf("%c", &quest3);
     while((quest3 != resp3)){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf("%c", &quest3);
     }
+    system("clear");
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest4[6];
@@ -85,12 +91,14 @@ void facil(){
     printf("4) Qual é o combustivel dos programadores?\n");
     scanf(" %5[^\n]", quest4);
     while(strcasecmp(quest4, resp4)){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf(" %5[^\n]", quest4);
     }
+    system("clear");
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest5[15];
@@ -99,12 +107,14 @@ void facil(){
     printf("5) Quem é o criador do Kernel Linux?\n");
     scanf(" %15[^\n]", quest5);
     while(strcasecmp(quest5, resp5)){
+        clear_buffer();
         puts("Não, está errado!");
         puts("Por favor tente novamente:");
         scanf(" %15[^\n]", quest5);
     }
+    system("clear");
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest6[11];
@@ -113,12 +123,14 @@ void facil(){
     printf("6) Quem fundou a Microsoft?\n");
     scanf(" %10[^\n]", quest6);
     while(strcasecmp(quest6, resp6)){
-      puts("Não, está errado!");
-      puts("Por favor tente novamente:");
-      scanf(" %10[^\n]", quest6);
+        clear_buffer();
+        puts("Não, está errado!");
+        puts("Por favor tente novamente:");
+        scanf(" %10[^\n]", quest6);
     }
+    system("clear");
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest7;
@@ -132,12 +144,14 @@ void facil(){
     printf("\n");
     scanf("%c", &quest7);
     while(quest7 != resp7){
-      puts("Não, está errado!");
-      puts("Por favor tente novamente:");
-      scanf("%c", &quest7);
+        clear_buffer();
+        puts("Não, está errado!");
+        puts("Por favor tente novamente:");
+        scanf("%c", &quest7);
     }
+    system("clear");
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest8;
@@ -151,12 +165,14 @@ void facil(){
     printf("\n");
     scanf(" %c", &quest8);
     while(quest8 != resp8){
-      puts("Não, está errado!");
-      puts("Por favor tente novamente:");
-      scanf(" %c", &quest8);
+        clear_buffer();
+        puts("Não, está errado!");
+        puts("Por favor tente novamente:");
+        scanf(" %c", &quest8);
     }
+    system("clear");
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest9;
@@ -170,12 +186,14 @@ void facil(){
     printf("\n");
     scanf("%c", &quest9);
     while(quest9 != resp9){
-      puts("Não, está errado!");
-      puts("Por favor tente novamente:");
-      scanf("%c", &quest9);
+        clear_buffer();
+        puts("Não, está errado!");
+        puts("Por favor tente novamente:");
+        scanf("%c", &quest9);
     }
+    system("clear");
     puts("Correto!");
-    getchar();
+    clear_buffer();
     getchar();
 
     char quest;
@@ -186,26 +204,36 @@ void facil(){
     printf("c) MacOS\n");
     printf("d) Android\n");
     printf("\n");
-    getchar();
-    getchar();
     scanf("%c", &quest);
+    clear_buffer();
+    
     system("clear");
     puts("NÃO EXISTE O MELHOR SISTEMA OPERACIONAL DO MUNDO.");
-    getchar();
+//     getchar();
+    clear_buffer();
+    
     system("clear");
     puts("O MELHOR SISTEMA OPERACIONAL DO MUNDO É AQUELE QUE ESTA NO SEU CORAÇÃO.");
-    getchar();
+//     getchar();
+    clear_buffer();
+    
     system("clear");
     puts("Porém...");
-    getchar();
+//     getchar();
+    clear_buffer();
+    
     system("clear");
     puts("LINUX não pega os vírus de Windows, a maioria dos servidores é LINUX");
     puts("E...");
-    getchar();
+//     getchar();
+    clear_buffer();
+    
     system("clear");
     puts("O LINUX NÃO TE OBRIGA A ATUALIZAR TODA HORA!");
-    getchar();
+//     getchar();
+    clear_buffer();
 
+//     do{}while();
     char quest10;
     system("clear");
     printf("10) Qual é o melhor Sistema Operacional do mundo?\n");
@@ -214,167 +242,10 @@ void facil(){
     printf("c) Kernel Linux\n");
     printf("d) Linus Is Not UniX\n");
     printf("\n");
-    getchar();
     scanf("%c", &quest10);
-    // if(quest10 = 'a') {
-    //     system("clear");
-    //     printf("\t\t\t\t                                          ..                            \n");
-    //     printf("\t\t\t\t                                      ,'.                           \n");
-    //     printf("\t\t\t\t                                                                    \n");
-    //     printf("\t\t\t\t                                    ..                              \n");
-    //     printf("\t\t\t\t                          :kk:    :k0KKc                            \n");
-    //     printf("\t\t\t\t                         'K.:Xo  ;Mx..cW;                           \n");
-    //     printf("\t\t\t\t                         .0  ld:ccK;   N:                           \n");
-    //     printf("\t\t\t\t                          ckdkOO0KK0xo0k                            \n");
-    //     printf("\t\t\t\t                          ldkkO0KKKK0kxk'                           \n");
-    //     printf("\t\t\t\t                          ,odkOO0Okxdddd.  ,.                       \n");
-    //     printf("\t\t\t\t                          'Oocloodddxk0Kk  .;.                      \n");
-    //     printf("\t\t\t\t                          kKOkxddxk0XNWMM0                          \n");
-    //     printf("\t\t\t\t                        .KMWNK00KXWWMMMMMMK                         \n");
-    //     printf("\t\t\t\t                       ,WMMMMMWWMMMMMMMMMMWx                        \n");
-    //     printf("\t\t\t\t                       XMMMMMMWWMMMMWWWWWNNN.                       \n");
-    //     printf("\t\t\t\t                      'XNWMMMMWMMMMMWWWNXXKXK;                      \n");
-    //     printf("\t\t\t\t                     :NMMMMMMMMMMMMMMMMMMMWWXNd                     \n");
-    //     printf("\t\t\t\t                  . cMMMMMMMMMMMMMMMMMMMMMMMMWMo ,. .               \n");
-    //     printf("\t\t\t\t                   ,MMMMMMMMWWMMMMMMMMMMMMMMMMMW.   .               \n");
-    //     printf("\t\t\t\t                .  NMMMMMMMMWWMMMMMMMMMMMMMMMMMM:   .               \n");
-    //     printf("\t\t\t\t                . lMMMMMMMMMWWMMMMMMMMMMMMMMMMMMo   .               \n");
-    //     printf("\t\t\t\t               .. 0MMMMMMMMMWWMMMMMMMMMMMMMMMMMMl   .               \n");
-    //     printf("\t\t\t\t              ....NMMMMMMMMMWWMMMMMMMMMMMMMMMMMM;  .   .            \n");
-    //     printf("\t\t\t\t            ,xOOx;'dWMMMMMMMWWMMMMMMMMMMMMMMW0KK:      .'.          \n");
-    //     printf("\t\t\t\t       ....cxOOOOOl. lXMMMMMWMMMMMMMMMMMMMMMXokOl       'kd         \n");
-    //     printf("\t\t\t\t     ;xkkkkkOOOOOOOx.  'xWMMMMMMMMMMMMMMMMNX0okOx,.  .,oOOk'        \n");
-    //     printf("\t\t\t\t     ckOOOOOOOOOOOOOk,   .xMMMMMMMMMMMMMMMNKOokOkxdddxkOOOOk'       \n");
-    //     printf("\t\t\t\t     ;xOOOOOOOOOOOOOOOc    WMMMMMMMMMMMMMMWO:okOOOOkOOOOOOOOOx:.    \n");
-    //     printf("\t\t\t\t     ,xOOOOOOOOOOOOOOOOdcxXMMMMMMMMMMMMMM0; .okOOOOOOOOOOOOOOOkd'   \n");
-    //     printf("\t\t\t\t     okOOOOOOOOOOOOOOOOOddKWMMMMMMMMMW0l.   ,okOOOOOOOOOOkkxxdl,    \n");
-    //     printf("\t\t\t\t    :oxkkOOOOOOOOOOOOOOOxl, .;:llc:,.       ;okOOOOOOkkdol:,.       \n");
-    //     printf("\t\t\t\t     ';:loddxxxkkOOOOOOkxl;                 ,ldxkkxxdoc;.           \n");
-    //     printf("\t\t\t\t          ...',:clodxxdoc;.                 .,:clllc:,.             \n");
-    //     printf("\t\t\t\t                  ..',,'.                     ......   \n");
-    //     puts("\t\t\t\t\t\t\tLINUX > Ruindows!");
-    //     getchar();
-    // }
-    // else if(quest10 = 'b') {
-    //     system("clear");
-    //     printf("\t\t\t\t                                          ..                            \n");
-    //     printf("\t\t\t\t                                      ,'.                           \n");
-    //     printf("\t\t\t\t                                                                    \n");
-    //     printf("\t\t\t\t                                    ..                              \n");
-    //     printf("\t\t\t\t                          :kk:    :k0KKc                            \n");
-    //     printf("\t\t\t\t                         'K.:Xo  ;Mx..cW;                           \n");
-    //     printf("\t\t\t\t                         .0  ld:ccK;   N:                           \n");
-    //     printf("\t\t\t\t                          ckdkOO0KK0xo0k                            \n");
-    //     printf("\t\t\t\t                          ldkkO0KKKK0kxk'                           \n");
-    //     printf("\t\t\t\t                          ,odkOO0Okxdddd.  ,.                       \n");
-    //     printf("\t\t\t\t                          'Oocloodddxk0Kk  .;.                      \n");
-    //     printf("\t\t\t\t                          kKOkxddxk0XNWMM0                          \n");
-    //     printf("\t\t\t\t                        .KMWNK00KXWWMMMMMMK                         \n");
-    //     printf("\t\t\t\t                       ,WMMMMMWWMMMMMMMMMMWx                        \n");
-    //     printf("\t\t\t\t                       XMMMMMMWWMMMMWWWWWNNN.                       \n");
-    //     printf("\t\t\t\t                      'XNWMMMMWMMMMMWWWNXXKXK;                      \n");
-    //     printf("\t\t\t\t                     :NMMMMMMMMMMMMMMMMMMMWWXNd                     \n");
-    //     printf("\t\t\t\t                  . cMMMMMMMMMMMMMMMMMMMMMMMMWMo ,. .               \n");
-    //     printf("\t\t\t\t                   ,MMMMMMMMWWMMMMMMMMMMMMMMMMMW.   .               \n");
-    //     printf("\t\t\t\t                .  NMMMMMMMMWWMMMMMMMMMMMMMMMMMM:   .               \n");
-    //     printf("\t\t\t\t                . lMMMMMMMMMWWMMMMMMMMMMMMMMMMMMo   .               \n");
-    //     printf("\t\t\t\t               .. 0MMMMMMMMMWWMMMMMMMMMMMMMMMMMMl   .               \n");
-    //     printf("\t\t\t\t              ....NMMMMMMMMMWWMMMMMMMMMMMMMMMMMM;  .   .            \n");
-    //     printf("\t\t\t\t            ,xOOx;'dWMMMMMMMWWMMMMMMMMMMMMMMW0KK:      .'.          \n");
-    //     printf("\t\t\t\t       ....cxOOOOOl. lXMMMMMWMMMMMMMMMMMMMMMXokOl       'kd         \n");
-    //     printf("\t\t\t\t     ;xkkkkkOOOOOOOx.  'xWMMMMMMMMMMMMMMMMNX0okOx,.  .,oOOk'        \n");
-    //     printf("\t\t\t\t     ckOOOOOOOOOOOOOk,   .xMMMMMMMMMMMMMMMNKOokOkxdddxkOOOOk'       \n");
-    //     printf("\t\t\t\t     ;xOOOOOOOOOOOOOOOc    WMMMMMMMMMMMMMMWO:okOOOOkOOOOOOOOOx:.    \n");
-    //     printf("\t\t\t\t     ,xOOOOOOOOOOOOOOOOdcxXMMMMMMMMMMMMMM0; .okOOOOOOOOOOOOOOOkd'   \n");
-    //     printf("\t\t\t\t     okOOOOOOOOOOOOOOOOOddKWMMMMMMMMMW0l.   ,okOOOOOOOOOOkkxxdl,    \n");
-    //     printf("\t\t\t\t    :oxkkOOOOOOOOOOOOOOOxl, .;:llc:,.       ;okOOOOOOkkdol:,.       \n");
-    //     printf("\t\t\t\t     ';:loddxxxkkOOOOOOkxl;                 ,ldxkkxxdoc;.           \n");
-    //     printf("\t\t\t\t          ...',:clodxxdoc;.                 .,:clllc:,.             \n");
-    //     printf("\t\t\t\t                  ..',,'.                     ......   \n");
-    //     puts("\t\t\t\t\t\t\tLINUX > Ruindows!");
-    //     getchar();
-    // }
-    // else if(quest10 = 'c') {
-    //         system("clear");
-    //         printf("\t\t\t\t                                          ..                            \n");
-    //         printf("\t\t\t\t                                      ,'.                           \n");
-    //         printf("\t\t\t\t                                                                    \n");
-    //         printf("\t\t\t\t                                    ..                              \n");
-    //         printf("\t\t\t\t                          :kk:    :k0KKc                            \n");
-    //         printf("\t\t\t\t                         'K.:Xo  ;Mx..cW;                           \n");
-    //         printf("\t\t\t\t                         .0  ld:ccK;   N:                           \n");
-    //         printf("\t\t\t\t                          ckdkOO0KK0xo0k                            \n");
-    //         printf("\t\t\t\t                          ldkkO0KKKK0kxk'                           \n");
-    //         printf("\t\t\t\t                          ,odkOO0Okxdddd.  ,.                       \n");
-    //         printf("\t\t\t\t                          'Oocloodddxk0Kk  .;.                      \n");
-    //         printf("\t\t\t\t                          kKOkxddxk0XNWMM0                          \n");
-    //         printf("\t\t\t\t                        .KMWNK00KXWWMMMMMMK                         \n");
-    //         printf("\t\t\t\t                       ,WMMMMMWWMMMMMMMMMMWx                        \n");
-    //         printf("\t\t\t\t                       XMMMMMMWWMMMMWWWWWNNN.                       \n");
-    //         printf("\t\t\t\t                      'XNWMMMMWMMMMMWWWNXXKXK;                      \n");
-    //         printf("\t\t\t\t                     :NMMMMMMMMMMMMMMMMMMMWWXNd                     \n");
-    //         printf("\t\t\t\t                  . cMMMMMMMMMMMMMMMMMMMMMMMMWMo ,. .               \n");
-    //         printf("\t\t\t\t                   ,MMMMMMMMWWMMMMMMMMMMMMMMMMMW.   .               \n");
-    //         printf("\t\t\t\t                .  NMMMMMMMMWWMMMMMMMMMMMMMMMMMM:   .               \n");
-    //         printf("\t\t\t\t                . lMMMMMMMMMWWMMMMMMMMMMMMMMMMMMo   .               \n");
-    //         printf("\t\t\t\t               .. 0MMMMMMMMMWWMMMMMMMMMMMMMMMMMMl   .               \n");
-    //         printf("\t\t\t\t              ....NMMMMMMMMMWWMMMMMMMMMMMMMMMMMM;  .   .            \n");
-    //         printf("\t\t\t\t            ,xOOx;'dWMMMMMMMWWMMMMMMMMMMMMMMW0KK:      .'.          \n");
-    //         printf("\t\t\t\t       ....cxOOOOOl. lXMMMMMWMMMMMMMMMMMMMMMXokOl       'kd         \n");
-    //         printf("\t\t\t\t     ;xkkkkkOOOOOOOx.  'xWMMMMMMMMMMMMMMMMNX0okOx,.  .,oOOk'        \n");
-    //         printf("\t\t\t\t     ckOOOOOOOOOOOOOk,   .xMMMMMMMMMMMMMMMNKOokOkxdddxkOOOOk'       \n");
-    //         printf("\t\t\t\t     ;xOOOOOOOOOOOOOOOc    WMMMMMMMMMMMMMMWO:okOOOOkOOOOOOOOOx:.    \n");
-    //         printf("\t\t\t\t     ,xOOOOOOOOOOOOOOOOdcxXMMMMMMMMMMMMMM0; .okOOOOOOOOOOOOOOOkd'   \n");
-    //         printf("\t\t\t\t     okOOOOOOOOOOOOOOOOOddKWMMMMMMMMMW0l.   ,okOOOOOOOOOOkkxxdl,    \n");
-    //         printf("\t\t\t\t    :oxkkOOOOOOOOOOOOOOOxl, .;:llc:,.       ;okOOOOOOkkdol:,.       \n");
-    //         printf("\t\t\t\t     ';:loddxxxkkOOOOOOkxl;                 ,ldxkkxxdoc;.           \n");
-    //         printf("\t\t\t\t          ...',:clodxxdoc;.                 .,:clllc:,.             \n");
-    //         printf("\t\t\t\t                  ..',,'.                     ......   \n");
-    //         puts("\t\t\t\t\t\t\tLINUX > Ruindows!");
-    //         getchar();
-    //     }
-    //     else if(quest10 = 'd') {
-    //         system("clear");
-    //         printf("\t\t\t\t                                          ..                            \n");
-    //         printf("\t\t\t\t                                      ,'.                           \n");
-    //         printf("\t\t\t\t                                                                    \n");
-    //         printf("\t\t\t\t                                    ..                              \n");
-    //         printf("\t\t\t\t                          :kk:    :k0KKc                            \n");
-    //         printf("\t\t\t\t                         'K.:Xo  ;Mx..cW;                           \n");
-    //         printf("\t\t\t\t                         .0  ld:ccK;   N:                           \n");
-    //         printf("\t\t\t\t                          ckdkOO0KK0xo0k                            \n");
-    //         printf("\t\t\t\t                          ldkkO0KKKK0kxk'                           \n");
-    //         printf("\t\t\t\t                          ,odkOO0Okxdddd.  ,.                       \n");
-    //         printf("\t\t\t\t                          'Oocloodddxk0Kk  .;.                      \n");
-    //         printf("\t\t\t\t                          kKOkxddxk0XNWMM0                          \n");
-    //         printf("\t\t\t\t                        .KMWNK00KXWWMMMMMMK                         \n");
-    //         printf("\t\t\t\t                       ,WMMMMMWWMMMMMMMMMMWx                        \n");
-    //         printf("\t\t\t\t                       XMMMMMMWWMMMMWWWWWNNN.                       \n");
-    //         printf("\t\t\t\t                      'XNWMMMMWMMMMMWWWNXXKXK;                      \n");
-    //         printf("\t\t\t\t                     :NMMMMMMMMMMMMMMMMMMMWWXNd                     \n");
-    //         printf("\t\t\t\t                  . cMMMMMMMMMMMMMMMMMMMMMMMMWMo ,. .               \n");
-    //         printf("\t\t\t\t                   ,MMMMMMMMWWMMMMMMMMMMMMMMMMMW.   .               \n");
-    //         printf("\t\t\t\t                .  NMMMMMMMMWWMMMMMMMMMMMMMMMMMM:   .               \n");
-    //         printf("\t\t\t\t                . lMMMMMMMMMWWMMMMMMMMMMMMMMMMMMo   .               \n");
-    //         printf("\t\t\t\t               .. 0MMMMMMMMMWWMMMMMMMMMMMMMMMMMMl   .               \n");
-    //         printf("\t\t\t\t              ....NMMMMMMMMMWWMMMMMMMMMMMMMMMMMM;  .   .            \n");
-    //         printf("\t\t\t\t            ,xOOx;'dWMMMMMMMWWMMMMMMMMMMMMMMW0KK:      .'.          \n");
-    //         printf("\t\t\t\t       ....cxOOOOOl. lXMMMMMWMMMMMMMMMMMMMMMXokOl       'kd         \n");
-    //         printf("\t\t\t\t     ;xkkkkkOOOOOOOx.  'xWMMMMMMMMMMMMMMMMNX0okOx,.  .,oOOk'        \n");
-    //         printf("\t\t\t\t     ckOOOOOOOOOOOOOk,   .xMMMMMMMMMMMMMMMNKOokOkxdddxkOOOOk'       \n");
-    //         printf("\t\t\t\t     ;xOOOOOOOOOOOOOOOc    WMMMMMMMMMMMMMMWO:okOOOOkOOOOOOOOOx:.    \n");
-    //         printf("\t\t\t\t     ,xOOOOOOOOOOOOOOOOdcxXMMMMMMMMMMMMMM0; .okOOOOOOOOOOOOOOOkd'   \n");
-    //         printf("\t\t\t\t     okOOOOOOOOOOOOOOOOOddKWMMMMMMMMMW0l.   ,okOOOOOOOOOOkkxxdl,    \n");
-    //         printf("\t\t\t\t    :oxkkOOOOOOOOOOOOOOOxl, .;:llc:,.       ;okOOOOOOkkdol:,.       \n");
-    //         printf("\t\t\t\t     ';:loddxxxkkOOOOOOkxl;                 ,ldxkkxxdoc;.           \n");
-    //         printf("\t\t\t\t          ...',:clodxxdoc;.                 .,:clllc:,.             \n");
-    //         printf("\t\t\t\t                  ..',,'.                     ......   \n");
-    //         puts("\t\t\t\t\t\t\tLINUX > Ruindows!");
-    //         getchar();
-    //     }
-    //     else{
-    //       system("exit");
-    //     }
+    clear_buffer();
+    getchar();
+    
     system("clear");
     printf("\t\t\t\t                                          ..                            \n");
     printf("\t\t\t\t                                      ,'.                           \n");
@@ -411,5 +282,177 @@ void facil(){
     printf("\t\t\t\t          ...',:clodxxdoc;.                 .,:clllc:,.             \n");
     printf("\t\t\t\t                  ..',,'.                     ......   \n");
     puts("\t\t\t\t\t\t\tLINUX > Ruindows!");
+    
+    clear_buffer();
     getchar();
+    
+//     switch(quest10){
+//         case 'a':
+//             system("clear");
+//             printf("\t\t\t\t                                          ..                            \n");
+//             printf("\t\t\t\t                                      ,'.                           \n");
+//             printf("\t\t\t\t                                                                    \n");
+//             printf("\t\t\t\t                                    ..                              \n");
+//             printf("\t\t\t\t                          :kk:    :k0KKc                            \n");
+//             printf("\t\t\t\t                         'K.:Xo  ;Mx..cW;                           \n");
+//             printf("\t\t\t\t                         .0  ld:ccK;   N:                           \n");
+//             printf("\t\t\t\t                          ckdkOO0KK0xo0k                            \n");
+//             printf("\t\t\t\t                          ldkkO0KKKK0kxk'                           \n");
+//             printf("\t\t\t\t                          ,odkOO0Okxdddd.  ,.                       \n");
+//             printf("\t\t\t\t                          'Oocloodddxk0Kk  .;.                      \n");
+//             printf("\t\t\t\t                          kKOkxddxk0XNWMM0                          \n");
+//             printf("\t\t\t\t                        .KMWNK00KXWWMMMMMMK                         \n");
+//             printf("\t\t\t\t                       ,WMMMMMWWMMMMMMMMMMWx                        \n");
+//             printf("\t\t\t\t                       XMMMMMMWWMMMMWWWWWNNN.                       \n");
+//             printf("\t\t\t\t                      'XNWMMMMWMMMMMWWWNXXKXK;                      \n");
+//             printf("\t\t\t\t                     :NMMMMMMMMMMMMMMMMMMMWWXNd                     \n");
+//             printf("\t\t\t\t                  . cMMMMMMMMMMMMMMMMMMMMMMMMWMo ,. .               \n");
+//             printf("\t\t\t\t                   ,MMMMMMMMWWMMMMMMMMMMMMMMMMMW.   .               \n");
+//             printf("\t\t\t\t                .  NMMMMMMMMWWMMMMMMMMMMMMMMMMMM:   .               \n");
+//             printf("\t\t\t\t                . lMMMMMMMMMWWMMMMMMMMMMMMMMMMMMo   .               \n");
+//             printf("\t\t\t\t               .. 0MMMMMMMMMWWMMMMMMMMMMMMMMMMMMl   .               \n");
+//             printf("\t\t\t\t              ....NMMMMMMMMMWWMMMMMMMMMMMMMMMMMM;  .   .            \n");
+//             printf("\t\t\t\t            ,xOOx;'dWMMMMMMMWWMMMMMMMMMMMMMMW0KK:      .'.          \n");
+//             printf("\t\t\t\t       ....cxOOOOOl. lXMMMMMWMMMMMMMMMMMMMMMXokOl       'kd         \n");
+//             printf("\t\t\t\t     ;xkkkkkOOOOOOOx.  'xWMMMMMMMMMMMMMMMMNX0okOx,.  .,oOOk'        \n");
+//             printf("\t\t\t\t     ckOOOOOOOOOOOOOk,   .xMMMMMMMMMMMMMMMNKOokOkxdddxkOOOOk'       \n");
+//             printf("\t\t\t\t     ;xOOOOOOOOOOOOOOOc    WMMMMMMMMMMMMMMWO:okOOOOkOOOOOOOOOx:.    \n");
+//             printf("\t\t\t\t     ,xOOOOOOOOOOOOOOOOdcxXMMMMMMMMMMMMMM0; .okOOOOOOOOOOOOOOOkd'   \n");
+//             printf("\t\t\t\t     okOOOOOOOOOOOOOOOOOddKWMMMMMMMMMW0l.   ,okOOOOOOOOOOkkxxdl,    \n");
+//             printf("\t\t\t\t    :oxkkOOOOOOOOOOOOOOOxl, .;:llc:,.       ;okOOOOOOkkdol:,.       \n");
+//             printf("\t\t\t\t     ';:loddxxxkkOOOOOOkxl;                 ,ldxkkxxdoc;.           \n");
+//             printf("\t\t\t\t          ...',:clodxxdoc;.                 .,:clllc:,.             \n");
+//             printf("\t\t\t\t                  ..',,'.                     ......   \n");
+//             puts("\t\t\t\t\t\t\tLINUX > Ruindows!");
+//             clear_buffer();
+//             getchar();
+//             break;
+//         case 'b':
+//             system("clear");
+//             printf("\t\t\t\t                                          ..                            \n");
+//             printf("\t\t\t\t                                      ,'.                           \n");
+//             printf("\t\t\t\t                                                                    \n");
+//             printf("\t\t\t\t                                    ..                              \n");
+//             printf("\t\t\t\t                          :kk:    :k0KKc                            \n");
+//             printf("\t\t\t\t                         'K.:Xo  ;Mx..cW;                           \n");
+//             printf("\t\t\t\t                         .0  ld:ccK;   N:                           \n");
+//             printf("\t\t\t\t                          ckdkOO0KK0xo0k                            \n");
+//             printf("\t\t\t\t                          ldkkO0KKKK0kxk'                           \n");
+//             printf("\t\t\t\t                          ,odkOO0Okxdddd.  ,.                       \n");
+//             printf("\t\t\t\t                          'Oocloodddxk0Kk  .;.                      \n");
+//             printf("\t\t\t\t                          kKOkxddxk0XNWMM0                          \n");
+//             printf("\t\t\t\t                        .KMWNK00KXWWMMMMMMK                         \n");
+//             printf("\t\t\t\t                       ,WMMMMMWWMMMMMMMMMMWx                        \n");
+//             printf("\t\t\t\t                       XMMMMMMWWMMMMWWWWWNNN.                       \n");
+//             printf("\t\t\t\t                      'XNWMMMMWMMMMMWWWNXXKXK;                      \n");
+//             printf("\t\t\t\t                     :NMMMMMMMMMMMMMMMMMMMWWXNd                     \n");
+//             printf("\t\t\t\t                  . cMMMMMMMMMMMMMMMMMMMMMMMMWMo ,. .               \n");
+//             printf("\t\t\t\t                   ,MMMMMMMMWWMMMMMMMMMMMMMMMMMW.   .               \n");
+//             printf("\t\t\t\t                .  NMMMMMMMMWWMMMMMMMMMMMMMMMMMM:   .               \n");
+//             printf("\t\t\t\t                . lMMMMMMMMMWWMMMMMMMMMMMMMMMMMMo   .               \n");
+//             printf("\t\t\t\t               .. 0MMMMMMMMMWWMMMMMMMMMMMMMMMMMMl   .               \n");
+//             printf("\t\t\t\t              ....NMMMMMMMMMWWMMMMMMMMMMMMMMMMMM;  .   .            \n");
+//             printf("\t\t\t\t            ,xOOx;'dWMMMMMMMWWMMMMMMMMMMMMMMW0KK:      .'.          \n");
+//             printf("\t\t\t\t       ....cxOOOOOl. lXMMMMMWMMMMMMMMMMMMMMMXokOl       'kd         \n");
+//             printf("\t\t\t\t     ;xkkkkkOOOOOOOx.  'xWMMMMMMMMMMMMMMMMNX0okOx,.  .,oOOk'        \n");
+//             printf("\t\t\t\t     ckOOOOOOOOOOOOOk,   .xMMMMMMMMMMMMMMMNKOokOkxdddxkOOOOk'       \n");
+//             printf("\t\t\t\t     ;xOOOOOOOOOOOOOOOc    WMMMMMMMMMMMMMMWO:okOOOOkOOOOOOOOOx:.    \n");
+//             printf("\t\t\t\t     ,xOOOOOOOOOOOOOOOOdcxXMMMMMMMMMMMMMM0; .okOOOOOOOOOOOOOOOkd'   \n");
+//             printf("\t\t\t\t     okOOOOOOOOOOOOOOOOOddKWMMMMMMMMMW0l.   ,okOOOOOOOOOOkkxxdl,    \n");
+//             printf("\t\t\t\t    :oxkkOOOOOOOOOOOOOOOxl, .;:llc:,.       ;okOOOOOOkkdol:,.       \n");
+//             printf("\t\t\t\t     ';:loddxxxkkOOOOOOkxl;                 ,ldxkkxxdoc;.           \n");
+//             printf("\t\t\t\t          ...',:clodxxdoc;.                 .,:clllc:,.             \n");
+//             printf("\t\t\t\t                  ..',,'.                     ......   \n");
+//             puts("\t\t\t\t\t\t\tLINUX > Ruindows!");
+//             clear_buffer();
+//             getchar();
+//             break;
+//             
+//         case 'c':
+//             system("clear");
+//             printf("\t\t\t\t                                          ..                            \n");
+//             printf("\t\t\t\t                                      ,'.                           \n");
+//             printf("\t\t\t\t                                                                    \n");
+//             printf("\t\t\t\t                                    ..                              \n");
+//             printf("\t\t\t\t                          :kk:    :k0KKc                            \n");
+//             printf("\t\t\t\t                         'K.:Xo  ;Mx..cW;                           \n");
+//             printf("\t\t\t\t                         .0  ld:ccK;   N:                           \n");
+//             printf("\t\t\t\t                          ckdkOO0KK0xo0k                            \n");
+//             printf("\t\t\t\t                          ldkkO0KKKK0kxk'                           \n");
+//             printf("\t\t\t\t                          ,odkOO0Okxdddd.  ,.                       \n");
+//             printf("\t\t\t\t                          'Oocloodddxk0Kk  .;.                      \n");
+//             printf("\t\t\t\t                          kKOkxddxk0XNWMM0                          \n");
+//             printf("\t\t\t\t                        .KMWNK00KXWWMMMMMMK                         \n");
+//             printf("\t\t\t\t                       ,WMMMMMWWMMMMMMMMMMWx                        \n");
+//             printf("\t\t\t\t                       XMMMMMMWWMMMMWWWWWNNN.                       \n");
+//             printf("\t\t\t\t                      'XNWMMMMWMMMMMWWWNXXKXK;                      \n");
+//             printf("\t\t\t\t                     :NMMMMMMMMMMMMMMMMMMMWWXNd                     \n");
+//             printf("\t\t\t\t                  . cMMMMMMMMMMMMMMMMMMMMMMMMWMo ,. .               \n");
+//             printf("\t\t\t\t                   ,MMMMMMMMWWMMMMMMMMMMMMMMMMMW.   .               \n");
+//             printf("\t\t\t\t                .  NMMMMMMMMWWMMMMMMMMMMMMMMMMMM:   .               \n");
+//             printf("\t\t\t\t                . lMMMMMMMMMWWMMMMMMMMMMMMMMMMMMo   .               \n");
+//             printf("\t\t\t\t               .. 0MMMMMMMMMWWMMMMMMMMMMMMMMMMMMl   .               \n");
+//             printf("\t\t\t\t              ....NMMMMMMMMMWWMMMMMMMMMMMMMMMMMM;  .   .            \n");
+//             printf("\t\t\t\t            ,xOOx;'dWMMMMMMMWWMMMMMMMMMMMMMMW0KK:      .'.          \n");
+//             printf("\t\t\t\t       ....cxOOOOOl. lXMMMMMWMMMMMMMMMMMMMMMXokOl       'kd         \n");
+//             printf("\t\t\t\t     ;xkkkkkOOOOOOOx.  'xWMMMMMMMMMMMMMMMMNX0okOx,.  .,oOOk'        \n");
+//             printf("\t\t\t\t     ckOOOOOOOOOOOOOk,   .xMMMMMMMMMMMMMMMNKOokOkxdddxkOOOOk'       \n");
+//             printf("\t\t\t\t     ;xOOOOOOOOOOOOOOOc    WMMMMMMMMMMMMMMWO:okOOOOkOOOOOOOOOx:.    \n");
+//             printf("\t\t\t\t     ,xOOOOOOOOOOOOOOOOdcxXMMMMMMMMMMMMMM0; .okOOOOOOOOOOOOOOOkd'   \n");
+//             printf("\t\t\t\t     okOOOOOOOOOOOOOOOOOddKWMMMMMMMMMW0l.   ,okOOOOOOOOOOkkxxdl,    \n");
+//             printf("\t\t\t\t    :oxkkOOOOOOOOOOOOOOOxl, .;:llc:,.       ;okOOOOOOkkdol:,.       \n");
+//             printf("\t\t\t\t     ';:loddxxxkkOOOOOOkxl;                 ,ldxkkxxdoc;.           \n");
+//             printf("\t\t\t\t          ...',:clodxxdoc;.                 .,:clllc:,.             \n");
+//             printf("\t\t\t\t                  ..',,'.                     ......   \n");
+//             puts("\t\t\t\t\t\t\tLINUX > Ruindows!");
+//             clear_buffer();
+//             getchar();
+//             break;
+//             
+//         case 'd':
+//             system("clear");
+//             printf("\t\t\t\t                                          ..                            \n");
+//             printf("\t\t\t\t                                      ,'.                           \n");
+//             printf("\t\t\t\t                                                                    \n");
+//             printf("\t\t\t\t                                    ..                              \n");
+//             printf("\t\t\t\t                          :kk:    :k0KKc                            \n");
+//             printf("\t\t\t\t                         'K.:Xo  ;Mx..cW;                           \n");
+//             printf("\t\t\t\t                         .0  ld:ccK;   N:                           \n");
+//             printf("\t\t\t\t                          ckdkOO0KK0xo0k                            \n");
+//             printf("\t\t\t\t                          ldkkO0KKKK0kxk'                           \n");
+//             printf("\t\t\t\t                          ,odkOO0Okxdddd.  ,.                       \n");
+//             printf("\t\t\t\t                          'Oocloodddxk0Kk  .;.                      \n");
+//             printf("\t\t\t\t                          kKOkxddxk0XNWMM0                          \n");
+//             printf("\t\t\t\t                        .KMWNK00KXWWMMMMMMK                         \n");
+//             printf("\t\t\t\t                       ,WMMMMMWWMMMMMMMMMMWx                        \n");
+//             printf("\t\t\t\t                       XMMMMMMWWMMMMWWWWWNNN.                       \n");
+//             printf("\t\t\t\t                      'XNWMMMMWMMMMMWWWNXXKXK;                      \n");
+//             printf("\t\t\t\t                     :NMMMMMMMMMMMMMMMMMMMWWXNd                     \n");
+//             printf("\t\t\t\t                  . cMMMMMMMMMMMMMMMMMMMMMMMMWMo ,. .               \n");
+//             printf("\t\t\t\t                   ,MMMMMMMMWWMMMMMMMMMMMMMMMMMW.   .               \n");
+//             printf("\t\t\t\t                .  NMMMMMMMMWWMMMMMMMMMMMMMMMMMM:   .               \n");
+//             printf("\t\t\t\t                . lMMMMMMMMMWWMMMMMMMMMMMMMMMMMMo   .               \n");
+//             printf("\t\t\t\t               .. 0MMMMMMMMMWWMMMMMMMMMMMMMMMMMMl   .               \n");
+//             printf("\t\t\t\t              ....NMMMMMMMMMWWMMMMMMMMMMMMMMMMMM;  .   .            \n");
+//             printf("\t\t\t\t            ,xOOx;'dWMMMMMMMWWMMMMMMMMMMMMMMW0KK:      .'.          \n");
+//             printf("\t\t\t\t       ....cxOOOOOl. lXMMMMMWMMMMMMMMMMMMMMMXokOl       'kd         \n");
+//             printf("\t\t\t\t     ;xkkkkkOOOOOOOx.  'xWMMMMMMMMMMMMMMMMNX0okOx,.  .,oOOk'        \n");
+//             printf("\t\t\t\t     ckOOOOOOOOOOOOOk,   .xMMMMMMMMMMMMMMMNKOokOkxdddxkOOOOk'       \n");
+//             printf("\t\t\t\t     ;xOOOOOOOOOOOOOOOc    WMMMMMMMMMMMMMMWO:okOOOOkOOOOOOOOOx:.    \n");
+//             printf("\t\t\t\t     ,xOOOOOOOOOOOOOOOOdcxXMMMMMMMMMMMMMM0; .okOOOOOOOOOOOOOOOkd'   \n");
+//             printf("\t\t\t\t     okOOOOOOOOOOOOOOOOOddKWMMMMMMMMMW0l.   ,okOOOOOOOOOOkkxxdl,    \n");
+//             printf("\t\t\t\t    :oxkkOOOOOOOOOOOOOOOxl, .;:llc:,.       ;okOOOOOOkkdol:,.       \n");
+//             printf("\t\t\t\t     ';:loddxxxkkOOOOOOkxl;                 ,ldxkkxxdoc;.           \n");
+//             printf("\t\t\t\t          ...',:clodxxdoc;.                 .,:clllc:,.             \n");
+//             printf("\t\t\t\t                  ..',,'.                     ......   \n");
+//             puts("\t\t\t\t\t\t\tLINUX > Ruindows!");
+//             clear_buffer();
+//             getchar();
+//             break;
+//         
+//         default:
+//             printf("Opção invalida!");
+//             break;
+//     }
+    
 }
